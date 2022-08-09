@@ -22,16 +22,22 @@ const InputText = ({
   secureTextEntry,
   onChangeText,
   value,
+  onPressIn,
+  onFocus,
 }) => {
   return (
     <View style={styles.container}>
       <TextInput
+        autoCorrect={false}
+        onFocus={onFocus}
         style={[styles.inputText, textStyle]}
         placeholder={placeholder}
         secureTextEntry={secureTextEntry}
         onChangeText={onChangeText}
         value={value}
+        placeholderTextColor="black"
         autoCapitalize="none"
+        onPressIn={onPressIn}
       />
       {!hide && (
         <TouchableOpacity onPress={onPress} style={{}}>

@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   container: {justifyContent: 'center', alignItems: 'center'},
   buttonContainer: {
     height: hp(7),
-    marginTop: hp(5),
+
     width: wp(50),
     borderRadius: wp(25),
     backgroundColor: 'red',
